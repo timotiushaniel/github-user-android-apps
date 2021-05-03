@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".view.UserDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/grey2" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!-- Start of User Detail Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <!-- Start of Header Container -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circular_border_solid"
+                android:orientation="horizontal"
+                android:padding="40dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBarDetail"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/detail_avatar"
+                    app:layout_constraintEnd_toEndOf="@id/detail_avatar"
+                    app:layout_constraintStart_toStartOf="@id/detail_avatar"
+                    app:layout_constraintTop_toTopOf="@id/detail_avatar" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/detail_avatar"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/name"
+                    android:textColor="@color/grey2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/detail_username"
+                    app:layout_constraintEnd_toEndOf="@id/detail_avatar"
+                    app:layout_constraintStart_toStartOf="@id/detail_avatar"
+                    app:layout_constraintTop_toBottomOf="@id/detail_avatar" />
+
+                <TextView
+                    android:id="@+id/detail_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/username"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/ic_baseline_location_on_24"
+                    app:layout_constraintEnd_toEndOf="@id/detail_name"
+                    app:layout_constraintStart_toStartOf="@id/detail_name"
+                    app:layout_constraintTop_toBottomOf="@id/detail_name" />
+
+                <ImageView
+                    android:id="@+id/ic_baseline_location_on_24"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/circular_grey_border_solid"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/ic_baseline_location_on_24"
+                    app:layout_constraintTop_toBottomOf="@id/detail_username" />
+
+                <TextView
+                    android:id="@+id/detail_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/location"
+                    android:textColor="@color/grey2"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/ic_baseline_location_on_24"
+                    app:layout_constraintStart_toEndOf="@id/ic_baseline_location_on_24"
+                    app:layout_constraintTop_toTopOf="@id/ic_baseline_location_on_24" />
+
+                <ImageView
+                    android:id="@+id/ic_baseline_work_24"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/circular_grey_border_solid"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_work_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/ic_baseline_work_24"
+                    app:layout_constraintTop_toBottomOf="@id/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/detail_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/company"
+                    android:textColor="@color/grey2"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/ic_baseline_work_24"
+                    app:layout_constraintStart_toEndOf="@id/ic_baseline_work_24"
+                    app:layout_constraintTop_toTopOf="@id/ic_baseline_work_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- End of Header Container -->
+
+            <!-- Start of Data & Profile Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <!-- Start of User Data Container -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/master_middle_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_border_solid"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/repository_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repositories"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/followers_label"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/detail_repository"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_value"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/repository_label"
+                        app:layout_constraintStart_toStartOf="@id/repository_label"
+                        app:layout_constraintTop_toBottomOf="@id/repository_label" />
+
+                    <TextView
+                        android:id="@+id/followers_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/followers"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/following_label"
+                        app:layout_constraintStart_toEndOf="@id/repository_label"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/detail_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_value"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/followers_label"
+                        app:layout_constraintStart_toStartOf="@id/followers_label"
+                        app:layout_constraintTop_toBottomOf="@id/followers_label" />
+
+                    <TextView
+                        android:id="@+id/following_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/following"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/followers_label"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/detail_following"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_value"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/following_label"
+                        app:layout_constraintStart_toStartOf="@id/following_label"
+                        app:layout_constraintTop_toBottomOf="@id/following_label" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!-- End of User Data Container -->
+
+                <!-- Start of Following & Followers Fragment -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circular_border_solid"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabTextColor="@android:color/black" />
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!-- End of Following & Followers Fragment -->
+
+            </LinearLayout>
+
+            <!-- End of Data & Profile Container -->
+        </LinearLayout>
+        <!-- End of User Detail Container -->
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/activity_margin_medium_large"
+            android:layout_marginBottom="@dimen/activity_margin_medium_large"
+            app:fabSize="normal"
+            android:src="@drawable/ic_thumb_up"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

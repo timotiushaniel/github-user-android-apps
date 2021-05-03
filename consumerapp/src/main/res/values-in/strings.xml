@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ConsumerApp</string>
+    <string name="name">Nama</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="profile">Profil</string>
+    <string name="repositories">Repositori</string>
+    <string name="company">Perusahaan</string>
+    <string name="location">Lokasi</string>
+    <string name="input_username">Masukkan Nama Pengguna</string>
+    <string name="_0">0</string>
+    <string name="language_options">Ubah Pengaturan Bahasa</string>
+    <string name="title_activity_user_detail">UserDetail</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Selanjutnya</string>
+    <string name="previous">Sebelumnya</string>
+    <string name="dummy_value">0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="type">Tipe</string>
+    <string name="github_logo">Github Logo</string>
+    <string name="ic_baseline_location_on_24">ic_baseline_location_on_24</string>
+    <string name="ic_baseline_work_24">ic_baseline_work_24</string>
+    <string name="setting">Setting</string>
+
+    <string name="reminder_key">reminder</string>
+    <string name="language_key">language</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_summary">This is a daily reminder for Github app at 09:00 AM</string>
+    <string name="language">Language</string>
+
+    <string name="favorite">Favorite</string>
+</resources>

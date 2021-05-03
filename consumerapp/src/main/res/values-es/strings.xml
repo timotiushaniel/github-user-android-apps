@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ConsumerApp</string>
+    <string name="name">Nombre</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="followers">Seguidores</string>
+    <string name="following">Siguiendo</string>
+    <string name="profile">Perfil</string>
+    <string name="repositories">Repositorios</string>
+    <string name="company">Compañía</string>
+    <string name="location">Ubicación</string>
+    <string name="input_username">Introduzca su nombre de usuario</string>
+    <string name="_0">0</string>
+    <string name="language_options">Cambiar la configuración de idioma</string>
+    <string name="title_activity_user_detail">Detalle de usuario</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Primer fragmento</string>
+    <string name="second_fragment_label">Segundo fragmento</string>
+    <string name="next">Próximo</string>
+    <string name="previous">Previo</string>
+    <string name="dummy_value">0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="title_activity_detail">Actividad detallada</string>
+
+    <string name="hello_first_fragment">Hola primer fragmento</string>
+    <string name="hello_second_fragment">Hola segundo fragmento. Arg:% 1 $ s</string>
+    <string name="type">Tipo</string>
+    <string name="github_logo">Github Logo</string>
+    <string name="ic_baseline_location_on_24">ic_baseline_location_on_24</string>
+    <string name="ic_baseline_work_24">ic_baseline_work_24</string>
+    <string name="setting">Setting</string>
+
+    <string name="reminder_key">reminder</string>
+    <string name="language_key">language</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_summary">This is a daily reminder for Github app at 09:00 AM</string>
+    <string name="language">Language</string>
+
+    <string name="favorite">Favorite</string>
+</resources>

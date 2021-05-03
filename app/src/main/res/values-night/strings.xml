@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ic_baseline_location_on_24">ic_baseline_location_on_24</string>
+    <string name="ic_baseline_work_24">ic_baseline_work_24</string>
+    <string name="setting">Setting</string>
+    <string name="favorite">Favorite</string>
+    <string name="reminder_key">reminder</string>
+    <string name="language_key">language</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_summary">This is a daily reminder for Github app at 09:00 AM</string>
+    <string name="language">Language</string>
+</resources>
